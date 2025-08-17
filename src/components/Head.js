@@ -19,6 +19,7 @@ const Head = () => {
       <div className='col-span-10 px-10'>
         <input 
           className='w-1/2 p-2 border border-gray-700 rounded-l-full'
+          placeholder='Search'
           type='text' />
         <button className='p-2 bg-gray-300 border border-gray-700 rounded-r-full'>🔍</button>
       </div>
