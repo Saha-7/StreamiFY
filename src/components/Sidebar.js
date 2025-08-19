@@ -34,10 +34,10 @@ const Sidebar = () => {
       </ul>
       <h1 className='pt-5 font-bold'>More on Streamify</h1>
       <ul>
-        <li>Streamify Premium</li>
-        <li>Streamify Studio</li>
-        <li>Streamify Music</li>
-        <li>Streamify Kids</li>
+        <li> Premium</li>
+        <li> Studio</li>
+        <li> Music</li>
+        <li> Kids</li>
       </ul>
       <h1 className='pt-5 font-bold'>Settings</h1>
       <h1 className='pt-2 font-bold'>Report history</h1>
