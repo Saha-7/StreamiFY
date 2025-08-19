@@ -8,7 +8,7 @@ const Head = () => {
     dispatch(toggleMenu())
   }
   return (
-    <div className='grid grid-flow-col p-5 m-2 shadow-lg'>
+    <div className='grid grid-flow-col p-5 shadow-lg'>
       <div className="header-section col-span-1 bg-white text-black p-2 flex">
         <img 
           className='h-10 cursor-pointer' 
@@ -16,7 +16,8 @@ const Head = () => {
           alt="hamburger-menu"
           onClick={()=>toggleMenuHandler()}
         />
-        <a className='cursor-pointer' href='/'>
+        <div className='flex items-center mx-2'>
+          <a className='cursor-pointer' href='/'>
           <img 
           className='h-10 px-2' 
           src="https://img.icons8.com/nolan/64/online.png" 
@@ -24,6 +25,7 @@ const Head = () => {
         />
         </a>
         <h1 className="header text-3xl font-light font-mono">Streamify</h1>
+        </div>
       </div>
       <div className='col-span-10 px-10'>
         <input 
