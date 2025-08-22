@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { YOUTUBE_VIDEO_API } from '../utils/constant'
+import VideoCard from './VideoCard'
 
 const VideoContainer = () => {
-  const []
+  const [videos, setVideos] = useState([])
   useEffect(()=>{
     getVideos()
   },[])
@@ -11,12 +12,13 @@ const VideoContainer = () => {
     const response = await fetch(YOUTUBE_VIDEO_API)
     const data = await response.json()
     console.log(data)
+    setVideos(data.items)
   }
 
 
   return (
     <div>
-      VideoContainer
+      {videos[0] && <VideoCard info={videos[0]} /> }
     </div>
   )
 }
