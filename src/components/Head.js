@@ -8,7 +8,7 @@ const Head = () => {
     dispatch(toggleMenu())
   }
   return (
-    <div className='grid grid-flow-col p-5 shadow-lg'>
+    <div className='grid grid-flow-col p-5 shadow-lg mb-2'>
       <div className="header-section col-span-1 bg-white text-black p-2 flex">
         <img 
           className='h-10 cursor-pointer' 
