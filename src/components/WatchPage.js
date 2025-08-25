@@ -1,15 +1,17 @@
-import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { closeMenu } from "../utils/appSlice";
 
 const WatchPage = () => {
-  const [searchParams] = useSearchParams();
-  const videoId = searchParams.get("v");
-  
-  console.log("Video ID:", videoId); // a0Bg0srLKGU
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(closeMenu())
+  }, [])
   
   return (
     <div>
-      <h1>Watching video: {videoId}</h1>
-      {/* Your video player here */}
+      <h1>Watching video</h1>
+      
     </div>
   );
 };
